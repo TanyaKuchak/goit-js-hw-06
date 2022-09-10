@@ -15,5 +15,7 @@ const handleSubmit = (event) => {
         password:password.value,
     }
     console.log(userLogin);
- };
+    formRef.reset();
+};
+
 formRef.addEventListener('submit', handleSubmit);
