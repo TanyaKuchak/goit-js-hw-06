@@ -7,9 +7,10 @@ const colorRef = document.querySelector('.color');
 
 changeColorRef.addEventListener('click', handleClick);
 
-function handleClick () {
-  bodyRef.style.background = getRandomHexColor();
-  colorRef.textContent = getRandomHexColor();
+function handleClick() {
+  colorRef.textContent = getRandomHexColor() ;
+  bodyRef.style.background = colorRef.textContent;
+  
   console.log('click');
 }
 console.log(changeColorRef);
